@@ -1,0 +1,347 @@
+body {
+	color: #ededed;
+	background-color: #a22124;
+}
+
+h1 {
+	font-family: 'Bevan', cursive;
+	color: #fff;
+	text-shadow: #4f4f4f 0 1px 0;
+}
+
+h2 {
+	font-family: 'Coda', cursive;
+	text-shadow: #53090b 0 1px 1px;
+	color: #fee3dc;
+}
+
+.color h2 {
+	text-shadow: #abfb9a 0 1px 1px;
+	color: #3f5226;
+	font-family: 'Coda', cursive;
+	font-weight: bold;
+}
+
+.fader {
+	margin: 50px auto;
+}
+
+
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+}
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 98px;
+  background-color: #000;
+	color: #fff;
+	padding-top: 20px;
+	opacity: 0.91;
+	z-index: 10;
+}
+
+/* @group BANNER HEAD - PARRALEX + FADE */
+
+#banner {
+overflow: hidden;
+width: 100%;
+height: 550px;
+position: relative;
+clear: both;
+background: transparent url(../images/coffee_at_litcom.jpg) no-repeat fixed center center;
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='path/to/image/1.jpg',sizingMethod='scale');
+-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='path/to/image/1.jpg',sizingMethod='scale')";
+	margin-bottom: 0;
+}
+ 
+.wrap-center{
+margin: 0 auto;
+position: relative;
+max-width: 73.231em;
+}
+ 
+.banner-centered {
+text-align: center;
+position: absolute;
+display: block;
+max-width: 77.231em;
+
+
+margin-top: 100px;
+	width: 240px;
+}
+
+
+
+/* @end */
+
+/* @group SEPARATORS */
+
+section.ss-style-doublediagonal {
+	margin-bottom: 120px;
+}
+
+.container-fluid {
+	overflow: hidden;
+	width: 100%;
+}
+
+/* My Comment */
+
+.container svg {
+	display: block;
+}
+
+section {
+	position: relative;
+	padding: 10em 10%;
+	background: #a22124;
+	color: #fff;
+	text-align: center;
+}
+
+.color {
+	background: #aed137 0 -10px;
+	no-repeat fixed center center;
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='path/to/image/1.jpg',sizingMethod='scale');
+-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='path/to/image/1.jpg',sizingMethod='scale')";
+	margin-bottom: 0;
+	padding-bottom: 300px;
+}
+
+/*** Individual section styles and separators ***/
+
+/* Common style for pseudo-elements */
+section::before,
+section::after {
+	position: absolute;
+	content: '';
+	pointer-events: none;
+}
+
+/* Triangles */
+.ss-style-triangles::before,
+.ss-style-triangles::after {
+	left: 50%;
+	width: 100px;
+	height: 100px;
+	-webkit-transform: translateX(-50%) rotate(45deg);
+	transform: translateX(-50%) rotate(45deg);
+}
+
+.ss-style-triangles::before {
+	top: -50px;
+	background: #a22124;
+}
+
+.ss-style-triangles::after {
+	bottom: -50px;
+	z-index: 10;
+	background: inherit;
+}
+
+/* Double Diagonal line */
+
+.ss-style-doublediagonal {
+	z-index: 1;
+	background: #a22124;
+	height: 391px;
+	padding-bottom: 0;
+}
+
+.ss-style-doublediagonal::before,
+.ss-style-doublediagonal::after {
+	top: 0;
+	left: -25%;
+	z-index: -1;
+	width: 150%;
+	height: 105%;
+	background: inherit;
+	-webkit-transform: rotate(-2deg);
+	transform: rotate(-2deg);
+	-webkit-transform-origin: 0 0;
+	transform-origin: 0 0;
+}
+
+.ss-style-doublediagonal::before {
+	height: 50%;
+	background: #83181a;
+	-webkit-transform: rotate(-3deg);
+	transform: rotate(-3deg);
+	-webkit-transform-origin: 3% 0;
+	transform-origin: 3% 0;
+}
+
+/* Half Circle */
+.ss-style-halfcircle::before,
+.ss-style-halfcircle::after {
+	left: 50%;
+	z-index: 10;
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	background: inherit;
+	-webkit-transform: translateX(-50%);
+	transform: translateX(-50%);
+}
+
+.ss-style-halfcircle::before {
+	top: -50px;
+}
+
+.ss-style-halfcircle::after {
+	bottom: -50px;
+}
+
+/* Big Triangle */
+svg#bigTriangleColor {
+	pointer-events: none;
+}
+
+#bigTriangleColor path {
+	fill: #3498db;
+	stroke: #3498db;
+	stroke-width: 2;
+}
+
+/* Curves */
+#curveUpColor path,
+#curveDownColor path {
+}
+
+/* Multiple Triangles */
+.ss-style-multitriangles::before,
+.ss-style-multitriangles::after {
+	left: 50%;
+	width: 50px;
+	height: 50px;
+	-webkit-transform: translateX(-50%) rotate(45deg);
+	transform: translateX(-50%) rotate(45deg);
+}
+
+.ss-style-multitriangles::before {
+	top: -25px;
+	background: inherit;
+	box-shadow: -50px 50px 0 #3498db, 50px -50px 0 #3498db;
+}
+
+.ss-style-multitriangles::after {
+	bottom: -25px;
+	z-index: 10;
+	background: inherit;
+	box-shadow: -50px 50px 0 #3498db, 50px -50px 0 #3498db;
+}
+
+/* Rounded corners */
+.ss-style-roundedcorners::before {
+	top: 100%;
+	left: 0;
+	z-index: 10;
+	width: 100%;
+	height: 60px;
+	border-radius: 0 0 60px 60px;
+	background: inherit;
+}
+
+/* Rounded center split and bottom rounded */
+.ss-style-roundedsplit {
+	padding-top: 7em;
+	border-radius: 0 0 80px 80px;
+}
+
+.ss-style-roundedsplit::before,
+.ss-style-roundedsplit::after {
+	top: -70px;
+	left: 0;
+	z-index: 10;
+	width: 50%;
+	height: 70px;
+	background: inherit;
+}
+
+.ss-style-roundedsplit::before {
+	border-radius: 0 80px 0 0;
+}
+
+.ss-style-roundedsplit::after {
+	left: 50%;
+	border-radius: 80px 0 0 0;
+}
+
+/* Curves */
+#curveUpColor path,
+#curveDownColor path {
+	fill: #3498db;
+	stroke: #3498db;
+}
+
+svg#curveDownColor {
+	background-color: #af4306;
+}
+
+
+
+/* @end */
+
+/* Large desktops and laptops */
+
+@media (min-width: 1200px) {
+
+.v_big_01 {
+	font-size: 11em;
+}
+
+}
+
+/* Portrait tablets and medium desktops */
+
+@media (min-width: 992px) and (max-width: 1199px) {
+
+.v_big_01 {
+	font-size: 10em;
+	color: #b01e6f;
+}
+
+}
+
+/* Portrait tablets and small desktops */
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+.v_big_01 {
+	font-size: 8em;
+	color: #00ab9b;
+}
+
+}
+
+/* Landscape phones and portrait tablets */
+
+@media (max-width: 767px) {
+
+.v_big_01 {
+	font-size: 2em;
+	color: #00aa46;
+	
+}
+
+}
